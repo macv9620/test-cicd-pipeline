@@ -3,7 +3,7 @@ on:
   push:
     branches: [ "main" ]
 env:
-  VAR_GITHUB_CIUDAD_PROCEDENCIA: ${{ vars.VAR_GITHUB_CIUDAD_PRUEBA }}
+  VAR_GITHUB_CIUDAD_PROCEDENCIA: ${{ secrets.SECRET_CIUDAD }}
 jobs:
   build:
     runs-on: ubuntu-latest
