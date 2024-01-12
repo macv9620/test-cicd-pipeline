@@ -1,9 +1,10 @@
 package macv.cursos;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hola desde proceso CI/CD actualización #1");
+        String nombre = System.getenv("VAR_WF_NOMBRE_PERSONA");
+        String ciudad = System.getenv("VAR_GITHUB_CIUDAD_PROCEDENCIA");
+
+        System.out.println("Hola soy " + nombre + " y vivo en " + ciudad);
     }
 }
